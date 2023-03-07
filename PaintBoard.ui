@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color:rgb(27, 47, 117)
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:50px;
+	
+}
+</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>60</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color:rgb(2, 21, 85)
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:50px;
+	
+}
+</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>611</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEditor {
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	
+}
+ 
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>                                                手写板</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadbutten">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 rgb(231, 255, 246), stop:1 rgb(255, 250, 235));
+	color:rgb(57, 91, 3);
+border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	font-size: 16px;
+	
+}
+ 
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 rgb(247, 233, 255), stop:1 rgb(237, 255, 245));
+	color:white;
+}
+QPushButton:pressed{
+	background-color: rgb(228, 255, 237);
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>上  传  图   片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearbutton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>110</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 #cbffe8, stop:1 #faff98);
+	color:rgb(57, 91, 3);
+    padding: 4px;
+    min-width: 65px;
+    min-height: 12px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	font-size: 16px;
+}
+ 
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 #FF6465, stop:1 #9198FF);
+	color:white;
+}
+QPushButton:pressed{
+	background-color: rgb(65, 65, 65);
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>清空手写板</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="savebutton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>170</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 rgb(199, 246, 255), stop:1 rgb(255, 152, 233));
+	color:rgb(57, 91, 3);
+    padding: 4px;
+    min-width: 65px;
+    min-height: 12px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	font-size: 16px;
+}
+ 
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 #FF6465, stop:1 #9198FF);
+	color:white;
+}
+QPushButton:pressed{
+	background-color: rgb(65, 65, 65);
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>保存图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reconizbutton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>230</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 rgb(199, 246, 255), stop:1 rgb(255, 152, 233));
+	color:rgb(57, 91, 3);
+    padding: 4px;
+    min-width: 65px;
+    min-height: 12px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	font-size: 16px;
+}
+ 
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 #FF6465, stop:1 #9198FF);
+	color:white;
+}
+QPushButton:pressed{
+	background-color: rgb(65, 65, 65);
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>保存并识别图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitbutton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>500</y>
+      <width>121</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 #e66465, stop:1 #9198e5);
+	color:rgb(227, 227, 227);
+    padding: 4px;
+    min-width: 65px;
+    min-height: 12px;
+	border-bottom-left-radius:30px;
+	border-top-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-right-radius:30px;
+	font-size: 16px;
+}
+ 
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+    stop:0 #FF6465, stop:1 #9198FF);
+	color:white;
+}
+QPushButton:pressed{
+	background-color: rgb(65, 65, 65);
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>退出程序</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>290</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+  
+	color:rgb(57, 91, 3);
+    padding: 4px;
+    min-width: 65px;
+    min-height: 12px;
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	font-size: 16px;
+}
+ 
+</string>
+    </property>
+    <property name="text">
+     <string>使用橡皮擦</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPlainTextEdit{
+border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	font-size: 20px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>85</y>
+      <width>871</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
